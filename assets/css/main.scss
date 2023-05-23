@@ -1,0 +1,17 @@
+﻿// @import '@unocss/reset/tailwind-compat.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  outline: none;
+  box-sizing: border-box;
+}
+body,#__nuxt{
+  width: 100%;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}

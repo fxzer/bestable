@@ -1,0 +1,15 @@
+export default {
+  welcome: 'Welcome',
+  keyword0:'Patent formula to build dreams and grow up',
+  title0:'Bestable Pepatomya Jianxin Gechin yeast zinc γ-aminoblite probiotics',
+  desc0: 'Jiangnan University patent formula, imported raw materials from many countries, help children grow taller',
+  keyword1:'Multiple enzymes break through bottlenecks',
+  title1:'Bestable Belly Berlifted Pixel Pool Powder Comprehensive Fruit and Vegetable Enzyme Powder',
+  desc1: 'For the design characteristics of Asian diet, 17 kinds of enzymes are customized to improve children constipation problems',
+  keyword2:'The combination of Shuangyi is full of vitality',
+  title2:'Bestable Poblon is better, smooth and beneficial to beneficial bacteria',
+  desc2: 'Imported probiotic mouse Li Sugaca Lactobacillus HN001+Lactoblobacteriobacterium HN019, double adjustment of the intestinal flora, each box adds active lactic acid bacteria 600 billion CFU',
+  keyword3:'Nano -decentralized and efficient absorption',
+  title3:'Bestable Poblon Plants Milk Baccoe Polycuna SNK',
+  desc3: 'Imported patented plant lactococcal bacterium powder SNK, 2 billion yuan per millilital bacteria, with imported concentrated milk protein powder, improves immunity, intestinal laxative, accelerate nutritional absorption',
+}
