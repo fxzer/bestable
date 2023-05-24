@@ -2,13 +2,13 @@
   <img src="/imgs/背景图有字版本.png" alt="Bestable 百乐适" class="block object-cover w-full h-screen home-bg">
   <div>
     <div class="products-wrap grid grid-cols-2">
-      <div class=" relative bg-white flex-col f-c-c space-y-6 p-4 group  sd-3-1" v-for="(product, index) in products" :class="'bok' + index"
+      <div class="product relative bg-white flex-col f-c-c space-y-6 p-4 group  sd-3-1" v-for="(product, index) in products" :class="'bok' + index"
         :key="index">
-        <h2 class="keyword" :class="product.kwcolor">
+        <h2 class="keyword hover-scale" :class="product.kwcolor">
           {{  $t('keyword'+index) }}</h2>
-        <h3 class="title" :class="product.tittleClass">
+        <h3 class="title hover-scale " :class="product.tittleClass"  >
           {{  $t('title'+index) }}</h3>
-        <p class="desc"> {{  $t('desc'+index) }}</p>
+        <p class="desc hover-scale"> {{  $t('desc'+index) }}</p>
         <!-- 特效 -->
         <div class="absolute top-0 bottom-0 right-0 w-1/2 opacity-40 z-10">
           <svg class="absolute inset-0 w-full h-full" viewBox="0 0 1 1" preserveAspectRatio="none">
@@ -83,7 +83,12 @@ const products = reactive([
   }
 
 ])
-
+const reverseGradient  = (product) => {
+  const { from, via, to } = product
+  product.from = to
+  product.via = via
+  product.to = from
+}
 
 </script>
 <style lang="scss" scoped>
@@ -126,16 +131,20 @@ const products = reactive([
   grid-area: g3;
 }
 .keyword{
-  @apply text-6xl font-bold z-20  transition-all duration-300 ease-in-out   group-hover:(scale-105 -translate-y-1)
+  @apply text-6xl font-bold z-20  transition-all duration-300 ease-in-out    
 }
 .title{
-  @apply text-2xl bg-clip-text text-transparent bg-gradient-to-r  font-semibold z-20  transition-all duration-300 ease-in-out  group-hover:(scale-105 -translate-y-1)
+  @apply relative text-2xl bg-clip-text text-transparent bg-gradient-to-r  font-semibold z-20  transition-all duration-300 ease-in-out   
 }
 .desc{
-  @apply  text-gray-700 z-20  transition-all duration-300  ease-in-out group-hover:(scale-105 -translate-y-1)
+  @apply  text-gray-700 z-20  transition-all duration-300  ease-in-out  
 }
 .mask{
   @apply absolute inset-0  bg-white  transition duration-300 ease-in-out  group-hover:translate-x-[100%] will-change-transform
 }
+.product:hover .hover-scale{
+    transform: scale(1.05) translateY(-4px);
+}
+ 
 </style>
 
