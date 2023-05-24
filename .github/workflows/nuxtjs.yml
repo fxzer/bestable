@@ -20,25 +20,11 @@ jobs:
         uses: actions/setup-node@main
         with:
           node-version: "lts/*"
-<<<<<<< HEAD
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2.2.4
-        with:
-          version: 8.4.0
-          dest: # optional, default is ~/setup-pnpm
-          run_install: true 
-      - name: Build 🔧 
-        run: |
-          pnpm install
-          pnpm run build
-          pnpm run generate
-=======
       - name: Build 🔧 
         run: |
           npm install
           npm run build
           npm run generate
->>>>>>> 4494ca5 (test: test deploy action)
           ls -lrth
       - name: Deploy 🚀 
         uses: JamesIves/github-pages-deploy-action@v4
