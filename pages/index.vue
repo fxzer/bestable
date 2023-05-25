@@ -1,5 +1,12 @@
 <template>
-  <img src="/imgs/背景图有字版本.png" alt="Bestable 百乐适" class="block object-cover w-full h-screen home-bg">
+  <div class="relative w-full h-screen text-white text-center">
+    <img :src="homeBackground" alt="Bestable 百乐适" class="object-cover wh-full" > 
+    <div class="absolute top-1/2 left-1/2 -translate-1/2" v-if="locale !== 'zh'">
+      <h1 class="text-5xl  font-mono mt-14">{{$t('welcome')}}</h1>
+      <h2 class="text-8xl font-bold mt-10 mb-6 font-serif">{{$t('bestable')}}</h2>
+      <p class="text-2xl    tracking-widest   font-mono ">{{$t('desc')}}</p>
+    </div>
+  </div>
   <div>
     <div class="products-wrap grid grid-cols-2">
       <div class="product relative bg-white flex-col f-c-c space-y-6 p-8  group  sd-3-1" v-for="(product, index) in products" :class="'bok' + index"
@@ -36,6 +43,9 @@
 <script setup>
 
 const { locale } = useI18n()
+const homeBackground = computed(() => {
+  return locale.value === 'zh' ? '/imgs/背景图有字版本.png' : '/imgs/背景图无字版本.png'
+})
 const products = reactive([
   {
     kwcolor: 'text-#fbc545',

@@ -1,5 +1,7 @@
 export default {
   welcome: 'Welcome',
+  bestable: 'Bestable',
+  desc:'New beginnings of Diamond Health come from Bellesz, Germany.',
   keyword0:'Patent formula to build dreams and grow up',
   title0:'Bestable Pepatomya Jianxin Gechin yeast zinc γ-aminoblite probiotics',
   desc0: 'Jiangnan University patent formula, imported raw materials from many countries, help children grow taller',

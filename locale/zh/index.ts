@@ -1,5 +1,7 @@
 export default {
-  welcome: '欢迎',
+  welcome: '欢迎您',
+  bestable: 'Bestable 百乐适',
+  desc:'钻石健康新开始 来自德国百乐适',
   keyword0:'专利配方 筑梦成长',
   title0:'Bestable百乐适健长素酵母锌γ-氨基丁酸益生菌',
   desc0: '江南大学专利配方，多国进口原材料，助儿身高成长',
