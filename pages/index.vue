@@ -2,7 +2,7 @@
   <img src="/imgs/背景图有字版本.png" alt="Bestable 百乐适" class="block object-cover w-full h-screen home-bg">
   <div>
     <div class="products-wrap grid grid-cols-2">
-      <div class="product relative bg-white flex-col f-c-c space-y-6 p-4 group  sd-3-1" v-for="(product, index) in products" :class="'bok' + index"
+      <div class="product relative bg-white flex-col f-c-c space-y-6 p-8  group  sd-3-1" v-for="(product, index) in products" :class="'bok' + index"
         :key="index">
         <h2 class="keyword hover-scale" :class="product.kwcolor">
           {{  $t('keyword'+index) }}</h2>
@@ -143,7 +143,7 @@ const reverseGradient  = (product) => {
   @apply absolute inset-0  bg-white  transition duration-300 ease-in-out  group-hover:translate-x-[100%] will-change-transform
 }
 .product:hover .hover-scale{
-    transform: scale(1.05) translateY(-4px);
+    transform: scale(1.05) translateY(-5px) translateX(10px);
 }
  
 </style>

@@ -2,9 +2,9 @@
 
 import { defineNuxtConfig } from 'nuxt/config'
 export default defineNuxtConfig({
-  // app: {
-  //   baseURL:'/bestable/',
-  // },
+  app: {
+    baseURL:'/bestable/',
+  },
   devServer: {
     port: 9898,
   },
@@ -19,18 +19,6 @@ export default defineNuxtConfig({
   css: [
     'assets/css/main.scss',
   ],
-  appConfig: {
-    analyze: {
-      analyzerMode: 'static'
-    }
-  },
-  vite:{
-    server:{
-      hmr:{
-        overlay:false //#禁用vite错误提示
-      }
-    }
-  },
   i18n: {
     vueI18n: './i18n.config.ts' // if you are using custom path, default 
   }
