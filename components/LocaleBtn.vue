@@ -11,7 +11,7 @@
       class="absolute top-full   -translate-x-1/2 space-y-1   translate-y-1  saturate-200  sd-4-1 bg-white/50  p-1 text-black backdrop-blur-xl"
       v-if="optionVisible">
       <div class=" whitespace-nowrap px-2 py-1 hover:bg-blue/20  cursor-pointer"
-        :class="locale === item.value ? 'bg-green/20' : ''" :value="item.value" v-for="item in locales"
+        :class="locale === item.value ? 'bg-green/15' : ''" :value="item.value" v-for="item in locales"
         @click="toggleLocale(item)">{{ item.name }}</div>
     </div>
   </div>

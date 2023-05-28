@@ -1,7 +1,7 @@
 <template>
   <div class="w-full text-sm">
     <Header />
-    <div id="content" class="w-full">
+    <div id="content" class="pt-16 w-full">
       <slot />
     </div>
     <Footer />

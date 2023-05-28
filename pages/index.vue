@@ -1,5 +1,5 @@
 <template>
-  <div class="relative w-full h-screen text-white text-center">
+  <div class="relative w-full -mt-16 h-screen text-white text-center">
     <img :src="homeBackground" alt="Bestable 百乐适" class="object-cover wh-full" > 
     <div class="absolute top-1/2 left-1/2 -translate-1/2" v-if="locale !== 'zh'">
       <h1 class="text-5xl  font-mono mt-14">{{$t('welcome')}}</h1>
