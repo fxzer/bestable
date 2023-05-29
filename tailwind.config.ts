@@ -11,8 +11,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-      },
-      width: {
+        'primary': '#1D324B',
+        'bgray': '#AFB8BC',
       },
       boxShadow: {
         'rd': '0 0  4px  rgba(0, 0, 0, 0.2)',

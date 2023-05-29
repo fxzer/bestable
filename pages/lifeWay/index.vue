@@ -16,7 +16,7 @@
             {{ $t(`lfArr[${idx - 1}].desc`) }}
           </p>
           <p class="flex justify-end mt-4">
-            <ArrowRight class="text-white w-16 h-8 bg-#57A9FB/60  group-hover:bg-#57A9FB" />
+            <ArrowRight class="text-white w-16 h-8 bg-primary" />
           </p>
         </div>
       </NuxtLink>

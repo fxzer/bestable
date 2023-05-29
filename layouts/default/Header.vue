@@ -1,26 +1,28 @@
 <template>
   <header
-    class="w-full h-16 fixed top-0 left-0 z-50 backdrop-blur-lg saturate-200 bg-white/50 f-b-c px-4 lg:px-10 shadow-sm shadow-slate-300/40"
+    class="w-full h-16 fixed top-0 left-0 z-50   bg-primary f-b-c px-4 lg:px-10 text-bgray  shadow-sm shadow-bgray/40"
   >
-    <NuxtLink to="/">LOGO</NuxtLink>
+    <NuxtLink to="/"><img src="/logo.jpg" alt="" class="block h-12 "></NuxtLink>
     <div class="w-800px text-sm f-c-c h-full space-x-16 font-medium">
       <NuxtLink
         :to="nav.path"
-        class="nav-bar f-c-c text-lg flex-1 h-full hover:text-sky-600"
+        class="nav-bar f-c-c text-lg flex-1 h-full hover:text-white"
         v-for="nav in navs"
         :key="nav.key"
-        :class="isActive(nav) ? 'text-sky-600' : 'text-slate-700 '"
+        :class="isActive(nav) ? 'text-white' : 'text-bgray'"
         @mouseenter="curNav = nav"
         >{{ $t(nav.key) }}</NuxtLink
       >
     </div>
     <div class="f-c-c space-x-6">
       <LocaleBtn />
-      <NuxtLink to="/help" class="hover:text-sky-600">{{
+      <NuxtLink to="/help" class="hover:text-white">{{
         $t("helpAndQuery")
       }}</NuxtLink>
     </div>
   </header>
+
+
   <!-- 下拉面板 :PC端  -->
   <Transition
     name="custom-classes"
@@ -30,7 +32,7 @@
     <div
       v-if="curNav?.popper"
       ref="popper"
-      class="popper top-16 fixed left-0 w-full overflow-auto p-10 z-40 backdrop-blur-lg saturate-200 bg-white/60 shadow-md shadow-gray-600/10"
+      class="popper top-16 fixed left-0 w-full overflow-auto p-10 z-40   bg-#0f2235  shadow-md shadow-gray-600/10"
     >
       <!-- 品牌 -->
       <div
@@ -39,16 +41,16 @@
       >
         <NuxtLink
           @click="goTo(idx, 'brand')"
-          class="nav-bar f-c-c hover:text-sky-600 text-xl font-mono"
+          class="nav-bar f-c-c hover:text-white text-xl  cursor-pointer"
           v-for="idx in 4"
-          :class="route.params.id == idx ? 'text-sky-600' : 'text-slate-700 '"
+          :class="route.params.id == idx ? 'text-white' : 'text-bgray'"
         >
           <img
             :src="`/imgs/brand${idx}.jpg`"
             alt=""
-            class="block w-20 h-20 mr-4"
+            class="block min-w-14 h-20 mr-4 bg-white rounded-sm"
           />
-          <h2>{{ $t(`title${idx}`) }}</h2>
+          <h2>{{ $t(`title${idx-1}`) }}</h2>
         </NuxtLink>
       </div>
 
@@ -56,8 +58,8 @@
       <div class="brands f-c-c space-x-40" v-else-if="curNav.key === 'about'">
         <NuxtLink
           @click="goTo(idx, 'about')"
-          class="nav-bar cursor-pointer f-c-c   hover:text-sky-600 text-xl font-mono"
-          :class="route.params.id == idx ? 'text-sky-600' : 'text-slate-700 '"
+          class="nav-bar cursor-pointer f-c-c   hover:text-white text-xl "
+          :class="route.params.id == idx ? 'text-white' : 'text-bgray '"
           v-for="idx in 3"
         >
           <h2>{{ $t(`about${idx}`) }}</h2>

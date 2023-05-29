@@ -3,8 +3,8 @@
     <div v-for="(idx,i = idx -1) in 4">
       <h3 class="text-3xl">{{ $t(`footer[${i}].title`) }}</h3>
       <p class="text-xl my-10 text-gray-600 h-10">{{ $t(`footer[${i}].desc`) }}</p>
-      <a href="" class="f-s-c pt-4"  ><span class="border-2 border-#57A9FB h-8 f-c-c px-4">{{ $t(`footer[${i}].btn`) }}</span
-        ><ArrowRight class="text-white w-14 h-8 bg-#57A9FB"
+      <a href="" class="f-s-c pt-4"  ><span class="border-2 border-primary h-8 f-c-c px-4">{{ $t(`footer[${i}].btn`) }}</span
+        ><ArrowRight class="text-white w-14 h-8 bg-primary"
       /></a>
     </div>
   </div>
