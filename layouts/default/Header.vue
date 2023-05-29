@@ -48,7 +48,7 @@
           <img
             :src="`/imgs/brand${idx}.jpg`"
             alt=""
-            class="block min-w-14 h-20 mr-4 bg-white rounded-sm"
+            class="block min-w-14 h-20  mr-4 bg-white rounded-sm"
           />
           <h2>{{ $t(`title${idx-1}`) }}</h2>
         </NuxtLink>
