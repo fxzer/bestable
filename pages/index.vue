@@ -19,11 +19,11 @@
   <!-- 产品列表 -->
   <div>
     <div class="flex flex-wrap text-bgray">
-      <div class="product relative bg-primary flex-col f-c-c space-y-6 p-8">
+      <div class="product relative bg-gradient-to-tr from-#192D41 via-#23445c  to-#346589 flex-col f-c-c space-y-6 p-8 bg-g" :class="locale=== 'de' ? 'text-left':'text-center'">
         <h2 class="text-6xl font-bold text-white/90">
           {{ $t("keyword0") }}
         </h2>
-        <h3 class="text-2xl font-semibold text-white/80">
+        <h3 class="text-2xl font-semibold text-white/80 w-full">
           {{ $t("title0") }}
         </h3>
         <p class="desc hover-scale">{{ $t("desc0") }}</p>
@@ -34,11 +34,11 @@
       <img class="brand-img" :src="products[0].imgsrc" />
 
       <img class="brand-img" :src="products[1].imgsrc" />
-      <div class="product relative bg-primary flex-col f-c-c space-y-6 p-8">
+      <div class="product relative bg-gradient-to-tr from-#192D41 via-#23445c  to-#346589 flex-col f-c-c space-y-6 p-8" :class="locale=== 'de' ? 'text-left':'text-center'">
         <h2 class="text-6xl font-bold text-white/90">
           {{ $t("keyword1") }}
         </h2>
-        <h3 class="text-2xl font-semibold text-white/80">
+        <h3 class="text-2xl font-semibold text-white/80 w-full">
           {{ $t("title1") }}
         </h3>
         <p class="desc hover-scale">{{ $t("desc1") }}</p>
@@ -47,11 +47,11 @@
         </NuxtLink>
       </div>
 
-      <div class="product relative bg-primary flex-col f-c-c space-y-6 p-8">
+      <div class="product relative bg-gradient-to-tr from-#192D41 via-#23445c  to-#346589 flex-col f-c-c space-y-6 p-8" :class="locale=== 'de' ? 'text-left':'text-center'">
         <h2 class="text-6xl font-bold text-white/90">
           {{ $t("keyword2") }}
         </h2>
-        <h3 class="text-2xl font-semibold text-white/80">
+        <h3 class="text-2xl font-semibold text-white/80 w-full">
           {{ $t("title2") }}
         </h3>
         <p class="desc hover-scale">{{ $t("desc2") }}</p>
@@ -62,11 +62,11 @@
       <img class="brand-img" :src="products[2].imgsrc" />
 
       <img class="brand-img" :src="products[3].imgsrc" />
-      <div class="product relative bg-primary flex-col f-c-c space-y-6 p-8">
+      <div class="product relative bg-gradient-to-tr from-#192D41 via-#23445c  to-#346589 flex-col f-c-c space-y-6 p-8" :class="locale=== 'de' ? 'text-left':'text-center'">
         <h2 class="text-6xl font-bold text-white/90">
           {{ $t("keyword3") }}
         </h2>
-        <h3 class="text-2xl font-semibold text-white/80">
+        <h3 class="text-2xl font-semibold text-white/80 w-full">
           {{ $t("title3") }}
         </h3>
         <p class="desc hover-scale">{{ $t("desc3") }}</p>
