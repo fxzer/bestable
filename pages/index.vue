@@ -1,7 +1,14 @@
 <template>
   <div class="relative w-full -mt-16 h-screen text-white text-center">
     <img
-      :src="homeBackground"
+      v-if="locale === 'zh'"
+      src="/imgs/背景图有字版本.png"
+      alt="Bestable 百乐适"
+      class="object-cover wh-full"
+    />
+    <img
+    v-else
+      src="/imgs/背景图无字版本.png"
       alt="Bestable 百乐适"
       class="object-cover wh-full"
     />
@@ -96,11 +103,11 @@
 
 <script setup>
 const { locale } = useI18n();
-const homeBackground = computed(() => {
-  return locale.value === "zh"
-    ? "/imgs/背景图有字版本.png"
-    : "/imgs/背景图无字版本.png";
-});
+// const homeBackground = computed(() => {
+//   return locale.value === "zh"
+//     ? "/imgs/背景图有字版本.png"
+//     : "/imgs/背景图无字版本.png";
+// });
 const products = reactive([
   {
     kwcolor: "text-#fbc545",
