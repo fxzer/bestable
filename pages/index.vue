@@ -83,6 +83,7 @@
       </div>
     </div>
   </div>
+  <Bottom />
   <!-- 特效 -->
   <!-- <div class="absolute top-0 bottom-0 right-0 w-1/2 opacity-40 z-10">
   <svg class="absolute inset-0 w-full h-full" viewBox="0 0 1 1" preserveAspectRatio="none">

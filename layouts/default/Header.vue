@@ -71,7 +71,6 @@
 <script setup lang="ts">
 const isDark = ref(false);
 const route = useRoute();
-console.log("[ route ]-56", route.params.id);
 const router = useRouter();
 
 const navs = useNavs();
