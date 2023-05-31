@@ -6,7 +6,6 @@
   import presetRemToPx from '@unocss/preset-rem-to-px'
   export default defineConfig({
     shortcuts: [
-      ['w-bx', 'mx-6 md:mx-8 xl:(w-1200px mx-auto)'],
       ['flex-col', 'flex flex-col'],
       ['f-s-c', 'flex justify-start items-center'],
       ['f-c-c', 'flex justify-center items-center'],

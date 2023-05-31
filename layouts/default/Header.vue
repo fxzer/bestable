@@ -12,7 +12,7 @@
         :class="isActive(nav) ? 'text-white' : 'text-bgray'"
         @mouseenter="curNav = nav"
         >{{ $t(nav.key) }}</NuxtLink
-      >
+      > 
     </div>
     <div class="f-c-c space-x-6">
       <LocaleBtn />
@@ -36,7 +36,7 @@
     >
       <!-- 品牌 -->
       <div
-        class="brands w-bx grid grid-cols-4 gap-8"
+        class="brands w-1260px mx-auto grid grid-cols-4 gap-8"
         v-if="curNav.key === 'brand'"
       >
         <NuxtLink
@@ -47,9 +47,9 @@
         >
           <img
             :src="`/header/${idx}.png`"
-            class="block min-w-14 h-30  mr-4 -translate-y-2 rounded-sm"
+            class="block min-w-14 mr-4px h-25 -translate-y-2 rounded-sm"
           />
-          <h2>{{ $t(`title${idx-1}`) }}</h2>
+          <h2 class="clamp-2" :title="$t(`title${idx-1}`)">{{ $t(`title${idx-1}`) }}</h2>
         </NuxtLink>
       </div>
 
