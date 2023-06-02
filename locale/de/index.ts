@@ -1,13 +1,12 @@
 export default {
 
   brand: 'Unsere Marke',
+  brands: 'Markenfamilie',
+  concat:'kontaktiere uns',
   about: 'Über Bestable',
   lifeWay: 'Unser Lebensstil',
   helpAndQuery: 'Hilfe und Anfragen',
   'Anti-counterfeiting query': 'Anti-Fälschungs-Abfrage',
-  welcome: 'Willkommen',
-  bestable: 'Bestable',
-  desc: 'Neuanfang von Diamond Health kommt von Bellesz, Deutschland.',
   keyword0: 'Patentierte Formel, Traumwachstum',
   title0: 'Bestable Balishijian Changsu Hefezink-Gamma-Aminobuttersäureprobiotikum',
   desc0: 'Patentierte Formel der Jiangnan-Universität, importierte Rohstoffe aus mehreren Ländern, fördert das körperliche Wachstum von Kindern',

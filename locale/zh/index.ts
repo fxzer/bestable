@@ -1,14 +1,12 @@
 export default {
   /* 头部 */
   brand: '我们的品牌',
+  brands:'品牌家族',
+  concat:'联系我们',
   about: '关于百乐适',
   lifeWay: '我们的生活方式',
   helpAndQuery: '帮助与查询',
   'Anti-counterfeiting query': '防伪查询',
-  /* 首页图片 */
-  welcome: '欢迎您',
-  bestable: 'Bestable 百乐适',
-  desc: '钻石健康新开始 来自德国百乐适',
   /* 产品描述 */
   keyword0: '专利配方 筑梦成长',
   title0: 'Bestable百乐适健长素酵母锌γ-氨基丁酸益生菌',

@@ -2,26 +2,22 @@
   <div class="relative w-full -mt-16 h-screen text-white text-center">
     <img
       v-if="locale === 'zh'"
-      src="/imgs/背景图有字版本.png"
+      src="/home/tiny/home-zh.jpg"
       alt="Bestable 百乐适"
       class="object-cover wh-full"
     />
     <img
-    v-else
-      src="/imgs/背景图无字版本.png"
+      v-else-if="locale === 'en'"
+      src="/home/tiny/home-en.jpg"
       alt="Bestable 百乐适"
       class="object-cover wh-full"
     />
-    <div
-      class="absolute top-1/2 left-1/2 -translate-1/2"
-      v-if="locale !== 'zh'"
-    >
-      <h1 class="text-5xl mt-14">{{ $t("welcome") }}</h1>
-      <h2 class="text-8xl font-bold mt-10 mb-6 ">
-        {{ $t("bestable") }}
-      </h2>
-      <p class="text-2xltracking-widest">{{ $t("desc") }}</p>
-    </div>
+    <img
+      v-else-if="locale === 'de'"
+      src="/home/tiny/home-de.jpg"
+      alt="Bestable 百乐适"
+      class="object-cover wh-full"
+    />
   </div>
   <!-- 产品列表 -->
   <div>
@@ -84,31 +80,23 @@
     </div>
   </div>
   <Bottom />
-  <!-- 特效 -->
-  <!-- <div class="absolute top-0 bottom-0 right-0 w-1/2 opacity-40 z-10">
-  <svg class="absolute inset-0 w-full h-full" viewBox="0 0 1 1" preserveAspectRatio="none">
-<defs>
-  <linearGradient :id="'gradient' + 1" x1="0" y1="1" x2="1" y2="0">
-<stop offset="0" :stop-color="products[0].from"></stop>
-<stop offset="0.5" :stop-color="products[0].via"></stop>
-<stop offset="1" :stop-color="products[0].to"></stop>
-  </linearGradient>
-</defs>
-<path d="M0 1 Q 0.8 0.8 1 0 L 1 1 Z" :fill="'url(#gradient' + index + ')'"></path>
-  </svg>
-  <div class="mask">
-  </div>
-</div> -->
 </template>
 <style scoped lang="scss"></style>
 
 <script setup>
-const { locale } = useI18n();
-// const homeBackground = computed(() => {
-//   return locale.value === "zh"
-//     ? "/imgs/背景图有字版本.png"
-//     : "/imgs/背景图无字版本.png";
-// });
+let lc = ''
+const { locale } =   useI18n();
+// onMounted(() => {
+//   lc  = localStorage.getItem("locale")
+//   locale.value = lc || 'zh'
+// })
+// watch(
+//   () => locale.value,
+//   (val) => {
+//     //保存当前语言
+//     localStorage.setItem("locale", val);
+//   }
+// );
 const products = reactive([
   {
     kwcolor: "text-#fbc545",
