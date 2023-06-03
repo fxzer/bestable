@@ -9,7 +9,7 @@
         :to="`/lifeWay/${idx}`"
         class="bg-zinc-50/50 hover:sd-15-2 sd-10-2  group"
       >
-        <img :src="`/imgs/lf${idx}.jpg`" alt="" />
+        <img :src="`/imgs/lf${idx}.jpg`" alt="" class="min-h-60"/>
         <div class="p-6">
           <h3 class="mb-4 text-xl">{{ $t(`lfArr[${idx - 1}].title`) }}</h3>
           <p class="text-zinc-600 text-base">
