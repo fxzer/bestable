@@ -36,7 +36,7 @@ export default {
   ],
   aboutContent3: [`Bestable verfügt außerdem über ein Team professioneller Marketingmitarbeiter mit umfassender Marketingerfahrung und -fähigkeit, die eine umfassende Palette an Marketingdienstleistungen für die Marke bereitstellen können. Es kann nicht nur Markeninformationen über verschiedene Kanäle und Methoden an ein breiteres Publikum weitergeben, sondern auch Markenstrategien zeitnah an Marktveränderungen und Wettbewerbsbedingungen anpassen und optimieren, um sicherzustellen, dass die Wettbewerbsfähigkeit der Marke stets an der Spitze steht .`, `
   Um das Vertrauen der Mehrheit der Verbraucher zu gewinnen, hat Bestable ein professionelles Vertriebsteam, ein Internet-Promi-Inkubationslager sowie Mutter-Kind-Communitys aufgebaut, um mit [Verkehr + Ausführung + Aktivitäten] genauere Dienstleistungen für die Vertriebsfront bereitzustellen Verkäufer beschränken den „Verkauf“ nicht mehr und sind ein privater Ernährungsverwalter der Verbraucher.`],
-  queryWayTitle: 'Derzeit gibt es zwei Methoden zur Fälschungsschutzabfrage für Bestable-Produkte. Bitte beurteilen Sie anhand des Fälschungsschutzsymbols auf der Verpackung:',
+  queryWayTitle: 'Sie können den QR-Code auf der Unterseite des Tanks mit WeChat scannen, um die Echtheit des Produkts zu überprüfen:',
   lfTitle: 'Blog zu Gesundheit und Wohlbefinden',
   lfArr: [
     {
@@ -122,26 +122,45 @@ export default {
 ],
 footer:[
   {
-    "title": "Treffen Sie unsere Botschafter",
-    "desc": "Die Wahl vieler internationaler und lokaler Prominenter",
+    "title": "Berühmte Kinderärzte treffen sich in der Cloud",
+    "desc": "Experten für pädiatrische Ernährung teilen ihr Wissen über Elternschaft (im Aufbau, bleiben Sie dran)",
     "btn": "Jetzt suchen"
   },
   {
-    "title": "Schlaf im Fokus",
-    "desc": "5 Tipps für eine bessere Nachtruhe",
+    "title": "Fokus auf präzise Ernährung für Kinder",
+    "desc": "Verschiedene Möglichkeiten zur Nahrungsergänzung je nach Alter",
     "btn": "Mehr lesen"
   },
   {
-    "title": "Kampf gegen Müdigkeit und das Glücksempfinden",
-    "desc": "Entdecken Sie 8 Möglichkeiten, Müdigkeit zu bekämpfen",
-    "btn": "Mehr lesen"
-  },
-  {
-    "title": "Haben Sie Fragen?",
-    "desc": "Lesen Sie häufig gestellte Fragen, finden Sie Antworten oder stellen Sie Ihre eigene Frage",
-    "btn": "Häufig gestellte Fragen besuchen"
+    "title": "FAQ",
+    "desc": "Schauen Sie sich die häufig gestellten Fragen an, finden Sie Antworten oder lassen Sie es uns wissen",
+    "btn": "Besuchen Sie die FAQ"
   }
-]
+],
+hostline:'Kaufleute Hotline',
+servline:'Aufschlag Hotline',
+mrlin:'Mr. Lin',
+feedbackTitle:'Rückmeldung',
+message:{
+  success:{
+    title:'eingereicht!',
+     desc:'Wir haben Ihr Feedback erhalten und werden uns so schnell wie möglich bei Ihnen melden!'
+  },
+  error:{
+    title:'Übermittlung fehlgeschlagen!',
+    desc:'Bitte versuchen Sie es später noch einmal!'
+  }
+},
+form:{
+  name:'Name',
+  pname:'Bitte geben Sie Ihren Namen ein',
+  phone:'Telefon',
+  pphone:'Bitte geben Sie die Telefonnummer ein',
+  pformat:'Bitte geben Sie das richtige Format ein',
+  question:'Frage',
+  pquestion:'Bitte geben Sie eine konkrete Frage ein',
+  submit:'einreichen',
+}
 
 
 }

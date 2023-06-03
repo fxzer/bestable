@@ -29,7 +29,7 @@ export default {
   ,
   aboutContent2: [`Bestable has a professional team composed of nutritionists, medical experts, pharmacists, etc., dedicated to the development and research of more scientific, safe and effective nutritional products. Tailor-made personalized healthy diet plans for consumers, and can also update and adjust their own knowledge system in a timely manner through continuous learning and research to ensure that the information and services provided are always kept in the latest and most accurate state. The R&D team keeps on understanding the relationship between human health and nutrition, and develops a series of high-quality nutrition products through advanced science and technology and strict quality control to provide consumers with more comprehensive health protection.`, `Bestable also has a team of professional marketing personnel with rich marketing experience and skills who can provide a full range of marketing services for the brand. Not only can it pass on brand information to a wider audience through various channels and methods, but it can also adjust and optimize brand strategies in a timely manner according to market changes and competition conditions to ensure that the brand's competitiveness is always in a leading position.`],
   aboutContent3: [`Bestable also has a team of professional marketing personnel with rich marketing experience and skills who can provide a full range of marketing services for the brand. Not only can it pass on brand information to a wider audience through various channels and methods, but it can also adjust and optimize brand strategies in a timely manner according to market changes and competition conditions to ensure that the brand's competitiveness is always in a leading position.`, `In order to win the trust of the majority of consumers, Bestable has built a professional sales team, Internet celebrity incubation camp, and maternal and child communities to provide more accurate services for the sales frontline with [traffic + execution + activities], so that shop assistants no longer Limit "sales" and be a private nutrition steward around consumers.`],
-  queryWayTitle: 'At present, there are two anti-counterfeiting query methods for Bestable products, please judge according to the anti-counterfeiting icon on the package:',
+  queryWayTitle: 'You can scan the QR code at the bottom of the can with Wechat to check the authenticity of the product:',
   lfTitle: 'Health and Wellbeing Blog',
   lfArr: [
     {
@@ -111,24 +111,44 @@ export default {
   ],
   footer: [
     {
-      "title": "Meet our spokespersons",
-      "desc": "Choices of many international and local celebrities",
+      "title": "Famous Pediatric Doctors Meet in the Cloud",
+      "desc": "Pediatric nutrition experts share parenting knowledge (under construction, stay tuned)",
       "btn": "Search Now"
     },
     {
-      "title": "Focus on Sleep",
-      "desc": "5 great tips for better nighttime rest",
+      "title": "Focus on precision nutrition for children",
+      "desc": "Different ways of supplementing nutrition by age",
       "btn": "Read More"
     },
     {
-      "title": "Combat Fatigue and Feel Happy",
-      "desc": "Discover 8 ways to combat fatigue",
-      "btn": "Read More"
-    },
-    {
-      "title": "Have Questions?",
-      "desc": "Check the Frequently Asked Questions section to find answers or submit your own questions",
+      "title": "FAQ",
+      "desc": "Check out the Frequently Asked Questions, find answers, or let us know",
       "btn": "Visit FAQ"
     }
-  ]
+  ],
+  hostline:'Merchants Hotline',
+  servline:'Service Hotline',
+  mrlin:'Mr. Lin',
+    /* 问题反馈 */
+    feedbackTitle:'Feedback',
+    message:{
+      success:{
+        title:'Submitted!',
+         desc:'We have received your feedback and will return your visit as soon as possible.'
+      },
+      error:{
+        title:'Failed to submit!',
+        desc:'Please try again later！'
+      }
+    },
+    form:{
+      name:'Name',
+      pname:'Please type in your name',
+      phone:'Phone',
+      pphone:'please enter phone number',
+      pformat:'Please enter the correct format',
+      question:'question',
+      pquestion:'Please enter a specific question',
+      submit:'submit',
+    }
 }
