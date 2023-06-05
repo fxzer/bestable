@@ -1,7 +1,7 @@
 <script setup lang='ts'>
 const paths = [
   '/',
-  'https://www.familydoctor.com.cn/baby/a/201812/2528421.html',
+  '/nutrition',
   '/form'
 ]
 </script>

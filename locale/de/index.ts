@@ -160,6 +160,34 @@ form:{
   question:'Frage',
   pquestion:'Bitte geben Sie eine konkrete Frage ein',
   submit:'einreichen',
+},
+nutrition: {
+  title: 'Wie sollen Kinder ihre Ernährung ergänzen? Die Art der Nahrungsergänzung variiert je nach Altersgruppe',
+  header: 'Die Wachstum- und Entwicklungsprozesse von Kindern haben unterschiedlich schnelle Stadien, aber diese Stadien sind miteinander verbunden und eng miteinander verflochten. Jedes Stadium des Wachstums und der Entwicklung erfordert eine hochwertige und ausgewogene Ernährung, um das gesunde Wachstum des Kindes zu unterstützen.',
+  subTitle: 'Also, wie können Kinder in verschiedenen Altersgruppen eine gesunde Ernährung ergänzen?',
+  footer: 'Zusammenfassend benötigen Kinder in verschiedenen Wachstumsstadien unterschiedliche Arten von Nährstoffen und Lebensmitteln, um eine ausgewogene Ernährung sicherzustellen. Eltern sollten die Ergänzung der Ernährung ihres Kindes je nach dem Wachstums- und Entwicklungsstadium anpassen, um das gesunde Wachstum des Kindes zu fördern.',
+  content: [
+    {
+      title: 'Erstens, Neugeborene werden hauptsächlich mit Muttermilch oder Milchersatz gefüttert',
+      desc: 'In den ersten 2 bis 4 Wochen nach der Geburt wachsen Babys am schnellsten und haben einen höheren Bedarf an Nährstoffen im Vergleich zu anderen Entwicklungsstadien. Um das gesunde Wachstum und die Entwicklung von Neugeborenen zu gewährleisten, ist eine ausgewogene Ernährung erforderlich. Die Nahrungsergänzung für Neugeborene besteht hauptsächlich aus Muttermilch, die eine einzigartige Rolle spielt, da sie Immunstoffe enthält, was für das normale Wachstum und die Entwicklung von Neugeborenen förderlich ist.',
+    },
+    {
+      title: 'Zweitens, Säuglinge werden weiterhin mit Muttermilch gefüttert, während Beikost eingeführt wird',
+      desc: 'Das erste Lebensjahr des Kindes ist eine Phase des schnellsten Wachstums und der Entwicklung. Um den Bedarf an Nährstoffen für das schnelle Wachstum und die Entwicklung zu erfüllen, sollten Säuglinge in den ersten sechs Monaten hauptsächlich mit Muttermilch gefüttert werden. Wenn keine Muttermilch zur Verfügung steht, können auch vertrauenswürdige Milchersatzprodukte gewählt werden. Zwischen sechs Monaten und einem Jahr, wenn das Kind entwöhnt wird, muss es weiterhin hauptsächlich mit Muttermilch gefüttert werden und allmählich mit Beikost beginnen.',
+    },
+    {
+      title: 'Drittens, die Ernährung von Kleinkindern wird komplexer',
+      desc: 'Mit dem Wachstum von Milchzähnen verbessert sich die Kauleistung von Kleinkindern. Täglich sollte die Ernährung von Milch auf Mischkost umgestellt werden, einschließlich einer ausgewogenen Ernährung aus Fleisch, Gemüse, Reis und Suppe sowie verschiedenen Fleischarten wie Fisch, magerem Fleisch, Eiern und Milchprodukten. Familien mit geeigneten Bedingungen können ihren Kindern wöchentlich einige Lebensmittel wie Tierblut und Meeresprodukte geben. Da die Verdauungsfunktion des Kindes noch nicht ausgereift ist, sollten die Lebensmittel jedoch in kleine Stücke zerhackt und gekocht werden, um das Kauen, Schlucken und Verdauen zu fördern.',
+    },
+    {
+      title: 'Viertens, in der Vorschulzeit sollten gute Essgewohnheiten entwickelt werden',
+      desc: 'In der Vorschulzeit ähnelt die Ernährungsplanung von Kindern bereits der von Erwachsenen und sie können mit ihren Eltern am Tisch essen. Allerdings sollten Kinder immer noch etwas weniger essen als Jugendliche oder Erwachsene und die Versorgung mit hochwertigem tierischen Protein sollte weiterhin gewährleistet sein, z.B. durch den Verzehr von Eiern, Milch und Fleisch. In dieser Phase bildet sich der Schlüssel zur Entwicklung guter Essgewohnheiten und Persönlichkeitsmerkmale. Die Ernährung sollte ein Nicht-Zufrieden-Sein, eine Nicht-Abneigung gegenüber bestimmten Nahrungsmitteln und eine Minimierung von Snacks fördern.',
+    },
+    {
+      title: 'Fünftens, im Schulalter sollte die Ernährung ausgewogen sein und das Frühstück sollte vollständig sein',
+      desc: 'Im Schulalter wachsen Kinder mit relativ gleichmäßiger Geschwindigkeit und ihre Nahrungsaufnahme ist relativ stabil. Da Kinder jedoch unterschiedliche Geschmacksvorlieben haben und zu Essstörungen oder Übergewicht neigen, sollten sie eine ausgewogene Ernährung mit verschiedenen Nahrungsmitteln anstreben, damit sie ein ausgewogenes Verhältnis an Nährstoffen erhalten. Es ist wichtig, dass Kinder alle Mahlzeiten des Tages regelmäßig und vollständig einnehmen, insbesondere das Frühstück. Eltern sollten auch darauf achten, eine abwechslungsreiche Auswahl an Lebensmitteln zur Verfügung zu stellen, die reich an Proteinen wie Fisch, Geflügel, Eiern und Fleisch sowie Milchprodukten und Hülsenfrüchten sind. Es ist auch wichtig, Kinder dazu zu ermutigen, weniger Snacks zu essen und zuckerhaltige Getränke und Süßigkeiten zu reduzieren.',
+    },
+  ]
 }
 
 

@@ -150,5 +150,33 @@ export default {
       question:'question',
       pquestion:'Please enter a specific question',
       submit:'submit',
+    },
+    nutrition: {
+      title: "How should children supplement nutrition? Different age groups require different methods of supplementation",
+      header: "Children's growth and development process has different fast and slow stages, but these stages are interrelated and tightly connected. Any developmental obstacles in one stage will have adverse effects on the next stage. Therefore, high-quality and balanced nutrition is needed at any stage of growth and development, which is beneficial for children's healthy growth.",
+      subTitle: "So, how can children of different ages supplement nutrition to stay healthy?",
+      footer: "In summary, the ways and types of food that children need to supplement nutrition vary according to different stages of growth and development. Parents need to supplement nutrition according to their children's different stages of growth and development, which is beneficial for their children's healthy growth.",
+      content: [
+        {
+          title: "First, newborns mainly rely on breast milk or substitutes",
+          desc: "Within 2-4 weeks after birth, infants grow the fastest and require relatively high amounts of nutrients compared to other periods. To ensure the growth and development of newborns, attention should be paid to nutrient supply. Supplementation of newborns' nutrition should mainly rely on breastfeeding. Breast milk is the best food for newborns and contains immune substances that are beneficial for their normal growth and development. No other substitute can compare with it.",
+        },
+        {
+          title: "Second, infant period mainly relies on breast milk, gradually adding complementary foods",
+          desc: "This is the year when children grow and develop the fastest, and their weight doubles that of birth. Therefore, their nutritional needs must meet their rapid growth and development. Before six months old, breastfeeding should be the main method. If breastfeeding is not possible, reliable formula milk or dairy products can also be chosen. From six months to a year old, this stage is the transition period from breastfeeding to weaning. Breastfeeding should continue to be the main method, and complementary foods should be gradually added.",
+        },
+        {
+          title: "Third, in the toddler period, food intake becomes more complex",
+          desc: "With the growth of teeth, children's chewing ability becomes stronger. At this stage, their daily diet should shift from being milk-based towards a mixed diet that balances meat and vegetables, dry and moist food, sufficient in fish, lean meat, eggs and dairy products as well as finely chopped vegetables. If possible, families can provide their children with some animal blood and seafood weekly. However, since children's digestive function is not yet mature and their digestive ability is weak, it is important to cook the food until it is soft and easy to chew, swallow and digest.",
+        },
+        {
+          title: "Fourth, in the pre-school period, eating habits should be cultivated",
+          desc: `During the pre-school period, the arrangement of children's diets is similar to that of adults, and they can usually eat with their parents at the same table. However, their appetite should still be slightly smaller than that of adolescents or adults, and their intake of high-quality animal protein such as eggs, milk and meat should be ensured. Meanwhile, this stage is a critical period for forming good habits and characters. Therefore, eating habits such as "not being picky, avoiding bias and not eating snacks" should be cultivated.`,
+        },
+        {
+          title: "Fifth, during the school-age period, nutrition should be balanced, and breakfast should be eaten well",
+          desc: "In the school-age period, children grow at a relatively consistent pace, and their intake of food is also relatively fixed. However, due to different food preferences, they are prone to picky eating and obesity. Therefore, they should reasonably consume various foods to achieve a balanced diet. They should eat three meals a day well, especially breakfast. In addition, parents should prepare colorful and tasty food to avoid monotonous and unchanging meals. Foods rich in protein such as fish, poultry, eggs and meat should be consumed more often, and milk and beans should also be sufficient. At the same time, children should be guided to eat fewer snacks, sugary drinks and candies.",
+        },
+      ],
     }
 }
