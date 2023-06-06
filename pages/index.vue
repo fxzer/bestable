@@ -1,80 +1,53 @@
 <template>
   <div class="relative w-full -mt-16 h-screen text-white text-center">
-    <img
-      v-if="locale === 'zh'"
-      src="/home/tiny/home-zh.jpg"
-      alt="Bestable 百乐适"
-      class="object-cover wh-full"
-    />
-    <img
-      v-else-if="locale === 'en'"
-      src="/home/tiny/home-en.jpg"
-      alt="Bestable 百乐适"
-      class="object-cover wh-full"
-    />
-    <img
-      v-else-if="locale === 'de'"
-      src="/home/tiny/home-de.jpg"
-      alt="Bestable 百乐适"
-      class="object-cover wh-full"
-    />
+    <img v-if="locale === 'zh'" src="/home/tiny/home-zh.jpg"  class="object-cover wh-full" />
+    <img v-else-if="locale === 'en'" src="/home/tiny/home-en.jpg"  class="object-cover wh-full" />
+    <img v-else-if="locale === 'de'" src="/home/tiny/home-de.jpg"  class="object-cover wh-full" />
   </div>
   <!-- 产品列表 -->
   <div>
     <div class="flex flex-wrap text-bgray">
-      <div class="product relative bg-gradient-to-tr from-#192D41 via-#23445c  to-#346589 flex-col f-c-c space-y-6 p-8 bg-g" :class="locale=== 'de' ? 'text-left':'text-center'">
-        <h2 class="text-6xl font-bold text-white/90">
-          {{ $t("keyword0") }}
-        </h2>
-        <h3 class="text-2xl font-semibold text-white/80 w-full">
-          {{ $t("title0") }}
-        </h3>
-        <p class="desc hover-scale">{{ $t("desc0") }}</p>
-        <NuxtLink to="/brand/1" class="f-s-c pt-4"  >
-          <span class="border-2 border-white h-9 f-c-c px-4">了解详情</span><ArrowRight class=" w-14 h-9 bg-white"/>
+      <div class="product relative">
+        <img v-if="locale === 'zh'" src="/home/text/zh/蓝色.jpg"  class="object-cover wh-full" />
+        <img v-else-if="locale === 'en'" src="/home/text/en/蓝色.jpg"  class="object-cover wh-full" />
+        <img v-else-if="locale === 'de'" src="/home/text/de/蓝色.jpg"  class="object-cover wh-full" />
+        <NuxtLink to="/brand/1" class="f-s-c  absolute  bottom-30 left-40">
+          <span class="border-2 border-white h-9 f-c-c px-4">了解详情</span>
+          <ArrowRight class=" w-14 h-9 bg-white" />
         </NuxtLink>
       </div>
       <img class="brand-img" :src="products[0].imgsrc" />
 
       <img class="brand-img" :src="products[1].imgsrc" />
-      <div class="product relative bg-gradient-to-tr from-#192D41 via-#23445c  to-#346589 flex-col f-c-c space-y-6 p-8" :class="locale=== 'de' ? 'text-left':'text-center'">
-        <h2 class="text-6xl font-bold text-white/90">
-          {{ $t("keyword1") }}
-        </h2>
-        <h3 class="text-2xl font-semibold text-white/80 w-full">
-          {{ $t("title1") }}
-        </h3>
-        <p class="desc hover-scale">{{ $t("desc1") }}</p>
-        <NuxtLink to="brand/2" class="f-s-c pt-4"  >
-          <span class="border-2 border-white h-9 f-c-c px-4">了解详情</span><ArrowRight class=" w-14 h-9 bg-white"/>
+      <div class="product relative ">
+        <img v-if="locale === 'zh'" src="/home/text/zh/紫色.jpg"  class="object-cover wh-full" />
+        <img v-else-if="locale === 'en'" src="/home/text/en/紫色.jpg"  class="object-cover wh-full" />
+        <img v-else-if="locale === 'de'" src="/home/text/de/紫色.jpg"  class="object-cover wh-full" />
+        <NuxtLink to="brand/2" class="f-s-c absolute  bottom-30 left-40">
+          <span class="border-2 border-white h-9 f-c-c px-4">了解详情</span>
+          <ArrowRight class=" w-14 h-9 bg-white" />
         </NuxtLink>
       </div>
 
-      <div class="product relative bg-gradient-to-tr from-#192D41 via-#23445c  to-#346589 flex-col f-c-c space-y-6 p-8" :class="locale=== 'de' ? 'text-left':'text-center'">
-        <h2 class="text-6xl font-bold text-white/90">
-          {{ $t("keyword2") }}
-        </h2>
-        <h3 class="text-2xl font-semibold text-white/80 w-full">
-          {{ $t("title2") }}
-        </h3>
-        <p class="desc hover-scale">{{ $t("desc2") }}</p>
-        <NuxtLink to="brand/3" class="f-s-c pt-4"  >
-          <span class="border-2 border-white h-9 f-c-c px-4">了解详情</span><ArrowRight class=" w-14 h-9 bg-white"/>
+      <div class="product relative ">
+        <img v-if="locale === 'zh'" src="/home/text/zh/绿色.jpg"  class="object-cover wh-full" />
+        <img v-else-if="locale === 'en'" src="/home/text/en/绿色.jpg"  class="object-cover wh-full" />
+        <img v-else-if="locale === 'de'" src="/home/text/de/绿色.jpg"  class="object-cover wh-full" />
+        <NuxtLink to="brand/3" class="f-s-c absolute  bottom-30 left-40">
+          <span class="border-2 border-white h-9 f-c-c px-4">了解详情</span>
+          <ArrowRight class=" w-14 h-9 bg-white" />
         </NuxtLink>
       </div>
       <img class="brand-img" :src="products[2].imgsrc" />
 
       <img class="brand-img" :src="products[3].imgsrc" />
-      <div class="product relative bg-gradient-to-tr from-#192D41 via-#23445c  to-#346589 flex-col f-c-c space-y-6 p-8" :class="locale=== 'de' ? 'text-left':'text-center'">
-        <h2 class="text-6xl font-bold text-white/90">
-          {{ $t("keyword3") }}
-        </h2>
-        <h3 class="text-2xl font-semibold text-white/80 w-full">
-          {{ $t("title3") }}
-        </h3>
-        <p class="desc hover-scale">{{ $t("desc3") }}</p>
-        <NuxtLink to="brand/4" class="f-s-c pt-4"  >
-          <span class="border-2 border-white h-9 f-c-c px-4">了解详情</span><ArrowRight class=" w-14 h-9 bg-white"/>
+      <div class="product relative ">
+        <img v-if="locale === 'zh'" src="/home/text/zh/黄色.jpg"  class="object-cover wh-full" />
+        <img v-else-if="locale === 'en'" src="/home/text/en/黄色.jpg"  class="object-cover wh-full" />
+        <img v-else-if="locale === 'de'" src="/home/text/de/黄色.jpg"  class="object-cover wh-full" />
+        <NuxtLink to="brand/4" class="f-s-c absolute  bottom-30 left-42">
+          <span class="border-2 border-white h-9 f-c-c px-4">了解详情</span>
+          <ArrowRight class=" w-14 h-9 bg-white" />
         </NuxtLink>
       </div>
     </div>
@@ -85,18 +58,7 @@
 
 <script setup>
 let lc = ''
-const { locale } =   useI18n();
-// onMounted(() => {
-//   lc  = localStorage.getItem("locale")
-//   locale.value = lc || 'zh'
-// })
-// watch(
-//   () => locale.value,
-//   (val) => {
-//     //保存当前语言
-//     localStorage.setItem("locale", val);
-//   }
-// );
+const { locale } = useI18n();
 const products = reactive([
   {
     kwcolor: "text-#fbc545",
@@ -148,6 +110,7 @@ const products = reactive([
 .product {
   width: 42%;
 }
+
 .brand-img {
   width: 58%;
 }
