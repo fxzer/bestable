@@ -23,6 +23,7 @@ export default defineNuxtConfig({
     vueI18n: './i18n.config.ts' // if you are using custom path, default 
   },
   app: {
+    // baseURL:'/bestable/',
     head: {
       script: [
         { src: 'https://smtpjs.com/v3/smtp.js' }

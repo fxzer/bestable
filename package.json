@@ -3,9 +3,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
     "dev": "nuxt dev",
+    "build": "nuxt build",
     "generate": "nuxt generate",
+    "dev:github": "nuxt dev --dotenv .env.github",
+    "build:github": "nuxt build --dotenv .env.github",
+    "generate:github": "nuxt generate --dotenv .env.github",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "deploy": "gh-pages --dotfiles -d .output/public"
