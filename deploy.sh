@@ -2,9 +2,10 @@
 
 set -e
 
-# pnpm build
-# pnpm generate
+pnpm build:github
+pnpm generate:github
 
+cd  dist
 # cd  .output/public
 
 git init 

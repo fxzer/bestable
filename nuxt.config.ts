@@ -24,6 +24,7 @@ export default defineNuxtConfig({
   },
   app: {
     // baseURL:'/bestable/',
+    buildAssetsDir: '/assets/',
     head: {
       script: [
         { src: 'https://smtpjs.com/v3/smtp.js' }
