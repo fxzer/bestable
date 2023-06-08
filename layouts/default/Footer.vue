@@ -1,14 +1,16 @@
 <template>
-  <div class="bg-primary w-full py-10">
-    <div class="w-300 mx-auto">
-      <div class="space-x-6 f-s-c">
+  <div class="bg-primary w-full p-10">
+    <div class="w-full md:w-300 mx-auto ">
+      <div class=" f-s-c flex-col  items-start md:items-center space-y-4 md:(space-x-6 space-y-0) md:flex-row">
         <NuxtLink to="/"><img src="/logo.png" alt="" class="block h-15" /></NuxtLink>
         <p class="text-white">{{ $t('concat') }}</p>
-        <img src="/wechat.png" class="wh-9" alt="" />
-        <img src="/douyin.svg" class="wh-10 p-1.5 bg-black rounded-md" alt="" />
-        <img src="/red-book.png" class="h-10 mt-3" alt="" />
+        <div class="f-s-c space-x-4">
+          <img src="/wechat.png" class="wh-9" alt="" />
+          <img src="/douyin.svg" class="wh-10 p-1.5 bg-black rounded-md" alt="" />
+          <img src="/red-book.png" class="h-10 mt-3" alt="" />
+        </div>
       </div>
-      <div class="leading-loose mt-8 flex space-x-30">
+      <div class="leading-loose mt-8 flex flex-col md:flex-row space-y-10  md:(space-x-30 space-y-0)">
         <div>
           <h2 class="text-white/50 text-lg font-semibold mb-2">{{ $t('brands') }}</h2>
           <div class="flex-col f-c-s space-y-2">

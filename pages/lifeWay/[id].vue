@@ -4,7 +4,7 @@ const id = ref(parseInt(route.params.id as string));
 </script>
 
 <template>
-  <div class="flex-col f-c-s p-50">
+  <div class="flex-col f-c-s p-5 md:p-50">
     <h2 class="text-5xl mb-12">
       {{ $t(`lfArr[${ id  - 1}].title`) }}
     </h2>

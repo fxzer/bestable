@@ -1,9 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="flex-col f-s-c p-20">
-    <h2 class="text-5xl mb-12">{{ $t("lfTitle") }}</h2>
-    <div class="grid grid-cols-3 gap-10">
+  <div class="flex-col f-s-c p-4 md:p-20">
+    <h2 class="text-5xl mt-12 md:mt-0 mb-12">{{ $t("lfTitle") }}</h2>
+    <div class="grid md:grid-cols-3 gap-10">
       <NuxtLink
         v-for="idx in 3"
         :to="`/lifeWay/${idx}`"

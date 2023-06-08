@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="mb-20  px-30 lg:px-50 xl:px-80 text-xl">
+  <div class="mb-20 px-4  md:px-30 lg:px-50 xl:px-80 text-xl">
     <h1 class="text-5xl my-10 leading-normal">{{ $t('nutrition.title') }}</h1>
     <header class="mb-10">{{ $t('nutrition.header') }}</header>
     <h2 class="font-semibold mb-8">{{ $t('nutrition.subTitle') }}</h2>

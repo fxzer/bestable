@@ -4,7 +4,7 @@
     <div id="content" class="pt-16 w-full">
       <slot />
     </div>
-    <Footer />
+    <Footer /> 
   </div>
 </template>
 

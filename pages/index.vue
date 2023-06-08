@@ -11,9 +11,9 @@
         <img v-if="locale === 'zh'" src="/home/text/zh/蓝色.jpg"  class="object-cover wh-full" />
         <img v-else-if="locale === 'en'" src="/home/text/en/蓝色.jpg"  class="object-cover wh-full" />
         <img v-else-if="locale === 'de'" src="/home/text/de/蓝色.jpg"  class="object-cover wh-full" />
-        <NuxtLink to="/brand/1" class="f-s-c  absolute  bottom-30 left-40">
-          <span class="border-2 border-white h-9 f-c-c px-4">了解详情</span>
-          <ArrowRight class=" w-14 h-9 bg-white" />
+        <NuxtLink to="/brand/1" class="f-s-c absolute bottom-4 left-8 md:(bottom-30 left-40)">
+          <span  class="border-1 md:border-2 border-white h-5 md:h-9 f-c-c px-2  md:px-4 text-xs md:text-sm">了解详情</span>
+          <ArrowRight class="w-8 h-5 md:(w-14 h-9) bg-white" />
         </NuxtLink>
       </div>
       <img class="brand-img" :src="products[0].imgsrc" />
@@ -23,9 +23,9 @@
         <img v-if="locale === 'zh'" src="/home/text/zh/紫色.jpg"  class="object-cover wh-full" />
         <img v-else-if="locale === 'en'" src="/home/text/en/紫色.jpg"  class="object-cover wh-full" />
         <img v-else-if="locale === 'de'" src="/home/text/de/紫色.jpg"  class="object-cover wh-full" />
-        <NuxtLink to="brand/2" class="f-s-c absolute  bottom-30 left-40">
-          <span class="border-2 border-white h-9 f-c-c px-4">了解详情</span>
-          <ArrowRight class=" w-14 h-9 bg-white" />
+        <NuxtLink to="brand/2" class="f-s-c absolute bottom-4 left-8 md:(bottom-30 left-40)">
+          <span class="border-1 md:border-2 border-white h-5 md:h-9 f-c-c px-2  md:px-4 text-xs md:text-sm">了解详情</span>
+          <ArrowRight class="w-8 h-5 md:(w-14 h-9) bg-white" />
         </NuxtLink>
       </div>
 
@@ -33,9 +33,9 @@
         <img v-if="locale === 'zh'" src="/home/text/zh/绿色.jpg"  class="object-cover wh-full" />
         <img v-else-if="locale === 'en'" src="/home/text/en/绿色.jpg"  class="object-cover wh-full" />
         <img v-else-if="locale === 'de'" src="/home/text/de/绿色.jpg"  class="object-cover wh-full" />
-        <NuxtLink to="brand/3" class="f-s-c absolute  bottom-30 left-40">
-          <span class="border-2 border-white h-9 f-c-c px-4">了解详情</span>
-          <ArrowRight class=" w-14 h-9 bg-white" />
+        <NuxtLink to="brand/3" class="f-s-c absolute bottom-4 left-8 md:(bottom-30 left-40)">
+          <span  class="border-1 md:border-2 border-white h-5 md:h-9 f-c-c px-2  md:px-4 text-xs md:text-sm">了解详情</span>
+          <ArrowRight class="w-8 h-5 md:(w-14 h-9) bg-white"/>
         </NuxtLink>
       </div>
       <img class="brand-img" :src="products[2].imgsrc" />
@@ -45,9 +45,9 @@
         <img v-if="locale === 'zh'" src="/home/text/zh/黄色.jpg"  class="object-cover wh-full" />
         <img v-else-if="locale === 'en'" src="/home/text/en/黄色.jpg"  class="object-cover wh-full" />
         <img v-else-if="locale === 'de'" src="/home/text/de/黄色.jpg"  class="object-cover wh-full" />
-        <NuxtLink to="brand/4" class="f-s-c absolute  bottom-30 left-42">
-          <span class="border-2 border-white h-9 f-c-c px-4">了解详情</span>
-          <ArrowRight class=" w-14 h-9 bg-white" />
+        <NuxtLink to="brand/4" class="f-s-c absolute bottom-4 left-8 md:(bottom-30 left-40)">
+          <span  class="border-1 md:border-2 border-white h-5 md:h-9 f-c-c px-2  md:px-4 text-xs md:text-sm">了解详情</span>
+          <ArrowRight class="w-8 h-5 md:(w-14 h-9) bg-white" />
         </NuxtLink>
       </div>
     </div>
