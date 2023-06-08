@@ -1,7 +1,7 @@
 <template>
   <header
     class="w-screen h-16 fixed top-0 left-0 z-50  bg-gradient-to-tr from-#192D41 via-#23445c  to-#2b5472 f-b-c px-4 lg:px-10 text-bgray  shadow-sm shadow-bgray/40">
-    <MenuBtn class="cursor-pointer block md:hidden" @click="showMenu" />
+    <MenuBtn class="cursor-pointer block md:hidden hover:text-white" @click="showMenu" />
     <NuxtLink to="/"><img src="/logo.png" alt="" class="block h-15"></NuxtLink>
     <div class="w-110  w-800px text-sm f-c-c h-full  hidden md:flex space-x-16 font-medium">
       <NuxtLink :to="nav.path" class="nav-bar f-c-c text-lg flex-1 h-full hover:text-white" v-for="nav in navs"
