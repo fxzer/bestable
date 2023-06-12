@@ -2,7 +2,7 @@
 
 <div class="wrap flex-col f-c-c pb-20">
   <div class="title-bg h-66 md:h-100 f-c-c">
-    <h2 class="text-5xl  p-20 text-white">{{ $t('about'+id) }}</h2>
+    <h2 class="text-5xl  p-15 text-white">{{ $t('about'+id) }}</h2>
   </div>
   <p class="mt-20 text-xl leading-loose px-4 md:px-30 lg:px-50 xl:px-80">{{ $t(`aboutContent${id}[0]`) }}</p>
   <p class="mt-10 text-xl leading-loose px-4 md:px-30 lg:px-50 xl:px-80">{{ $t(`aboutContent${id}[1]`) }}</p>

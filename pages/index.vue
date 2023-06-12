@@ -1,18 +1,65 @@
 <template>
-  <div class="relative w-full -mt-16 h-screen text-white text-center">
-    <img v-if="locale === 'zh'" src="/home/tiny/home-zh.jpg"  class="object-cover wh-full" />
-    <img v-else-if="locale === 'en'" src="/home/tiny/home-en.jpg"  class="object-cover wh-full" />
-    <img v-else-if="locale === 'de'" src="/home/tiny/home-de.jpg"  class="object-cover wh-full" />
+  <div class="relative w-full -mt-16 h-600px md:h-screen text-white text-center">
+    <img v-if="locale === 'zh'" src="/home/tiny/home-zh.jpg" class="object-cover wh-full" />
+    <img v-else-if="locale === 'en'" src="/home/tiny/home-en.jpg" class="object-cover wh-full" />
+    <img v-else-if="locale === 'de'" src="/home/tiny/home-de.jpg" class="object-cover wh-full" />
   </div>
   <!-- 产品列表 -->
   <div>
-    <div class="flex flex-wrap text-bgray">
+   
+    <div class="flex flex-wrap text-bgray" v-if="mdAndSmaller">
+      <img class="brand-img h-60" :src="products[0].imgsrc" />
+      <div class="product relative ">
+        <img v-if="locale === 'zh'" src="/home/text/zh/蓝色.jpg" class="object-cover wh-full" />
+        <img v-else-if="locale === 'en'" src="/home/text/en/蓝色.jpg" class="object-cover wh-full" />
+        <img v-else-if="locale === 'de'" src="/home/text/de/蓝色.jpg" class="object-cover wh-full" />
+        <NuxtLink to="/brand/1" class="f-s-c absolute bottom-20 left-20 ">
+          <span class="border-1 md:border-2 border-white h-5 md:h-9 f-c-c px-2  md:px-4 text-xs md:text-sm">了解详情</span>
+          <ArrowRight class="w-8 h-5   bg-white" />
+        </NuxtLink>
+      </div>
+     
+
+      <img class="brand-img h-60" :src="products[1].imgsrc" />
+      <div class="product relative ">
+        <img v-if="locale === 'zh'" src="/home/text/zh/紫色.jpg" class="object-cover wh-full" />
+        <img v-else-if="locale === 'en'" src="/home/text/en/紫色.jpg" class="object-cover wh-full" />
+        <img v-else-if="locale === 'de'" src="/home/text/de/紫色.jpg" class="object-cover wh-full" />
+        <NuxtLink to="brand/2" class="f-s-c absolute bottom-20 left-20 ">
+          <span class="border-1 md:border-2 border-white h-5 md:h-9 f-c-c px-2  md:px-4 text-xs md:text-sm">了解详情</span>
+          <ArrowRight class="w-8 h-5   bg-white" />
+        </NuxtLink>
+      </div>
+      <img class="brand-img h-60" :src="products[2].imgsrc" />
+      <div class="product relative ">
+        <img v-if="locale === 'zh'" src="/home/text/zh/绿色.jpg" class="object-cover wh-full" />
+        <img v-else-if="locale === 'en'" src="/home/text/en/绿色.jpg" class="object-cover wh-full" />
+        <img v-else-if="locale === 'de'" src="/home/text/de/绿色.jpg" class="object-cover wh-full" />
+        <NuxtLink to="brand/3" class="f-s-c absolute bottom-20 left-20 ">
+          <span class="border-1 md:border-2 border-white h-5 md:h-9 f-c-c px-2  md:px-4 text-xs md:text-sm">了解详情</span>
+          <ArrowRight class="w-8 h-5  bg-white" />
+        </NuxtLink>
+      </div>
+      
+
+      <img class="brand-img h-60" :src="products[3].imgsrc" />
+      <div class="product relative ">
+        <img v-if="locale === 'zh'" src="/home/text/zh/黄色.jpg" class="object-cover wh-full" />
+        <img v-else-if="locale === 'en'" src="/home/text/en/黄色.jpg" class="object-cover wh-full" />
+        <img v-else-if="locale === 'de'" src="/home/text/de/黄色.jpg" class="object-cover wh-full" />
+        <NuxtLink to="brand/4" class="f-s-c absolute bottom-20 left-20 ">
+          <span class="border-1 md:border-2 border-white h-5 md:h-9 f-c-c px-2  md:px-4 text-xs md:text-sm">了解详情</span>
+          <ArrowRight class="w-8 h-5  bg-white" />
+        </NuxtLink>
+      </div>
+    </div>
+    <div class="flex flex-wrap text-bgray"  v-else>
       <div class="product relative">
-        <img v-if="locale === 'zh'" src="/home/text/zh/蓝色.jpg"  class="object-cover wh-full" />
-        <img v-else-if="locale === 'en'" src="/home/text/en/蓝色.jpg"  class="object-cover wh-full" />
-        <img v-else-if="locale === 'de'" src="/home/text/de/蓝色.jpg"  class="object-cover wh-full" />
+        <img v-if="locale === 'zh'" src="/home/text/zh/蓝色.jpg" class="object-cover wh-full" />
+        <img v-else-if="locale === 'en'" src="/home/text/en/蓝色.jpg" class="object-cover wh-full" />
+        <img v-else-if="locale === 'de'" src="/home/text/de/蓝色.jpg" class="object-cover wh-full" />
         <NuxtLink to="/brand/1" class="f-s-c absolute bottom-4 left-8 md:(bottom-30 left-40)">
-          <span  class="border-1 md:border-2 border-white h-5 md:h-9 f-c-c px-2  md:px-4 text-xs md:text-sm">了解详情</span>
+          <span class="border-1 md:border-2 border-white h-5 md:h-9 f-c-c px-2  md:px-4 text-xs md:text-sm">了解详情</span>
           <ArrowRight class="w-8 h-5 md:(w-14 h-9) bg-white" />
         </NuxtLink>
       </div>
@@ -20,9 +67,9 @@
 
       <img class="brand-img" :src="products[1].imgsrc" />
       <div class="product relative ">
-        <img v-if="locale === 'zh'" src="/home/text/zh/紫色.jpg"  class="object-cover wh-full" />
-        <img v-else-if="locale === 'en'" src="/home/text/en/紫色.jpg"  class="object-cover wh-full" />
-        <img v-else-if="locale === 'de'" src="/home/text/de/紫色.jpg"  class="object-cover wh-full" />
+        <img v-if="locale === 'zh'" src="/home/text/zh/紫色.jpg" class="object-cover wh-full" />
+        <img v-else-if="locale === 'en'" src="/home/text/en/紫色.jpg" class="object-cover wh-full" />
+        <img v-else-if="locale === 'de'" src="/home/text/de/紫色.jpg" class="object-cover wh-full" />
         <NuxtLink to="brand/2" class="f-s-c absolute bottom-4 left-8 md:(bottom-30 left-40)">
           <span class="border-1 md:border-2 border-white h-5 md:h-9 f-c-c px-2  md:px-4 text-xs md:text-sm">了解详情</span>
           <ArrowRight class="w-8 h-5 md:(w-14 h-9) bg-white" />
@@ -30,23 +77,23 @@
       </div>
 
       <div class="product relative ">
-        <img v-if="locale === 'zh'" src="/home/text/zh/绿色.jpg"  class="object-cover wh-full" />
-        <img v-else-if="locale === 'en'" src="/home/text/en/绿色.jpg"  class="object-cover wh-full" />
-        <img v-else-if="locale === 'de'" src="/home/text/de/绿色.jpg"  class="object-cover wh-full" />
+        <img v-if="locale === 'zh'" src="/home/text/zh/绿色.jpg" class="object-cover wh-full" />
+        <img v-else-if="locale === 'en'" src="/home/text/en/绿色.jpg" class="object-cover wh-full" />
+        <img v-else-if="locale === 'de'" src="/home/text/de/绿色.jpg" class="object-cover wh-full" />
         <NuxtLink to="brand/3" class="f-s-c absolute bottom-4 left-8 md:(bottom-30 left-40)">
-          <span  class="border-1 md:border-2 border-white h-5 md:h-9 f-c-c px-2  md:px-4 text-xs md:text-sm">了解详情</span>
-          <ArrowRight class="w-8 h-5 md:(w-14 h-9) bg-white"/>
+          <span class="border-1 md:border-2 border-white h-5 md:h-9 f-c-c px-2  md:px-4 text-xs md:text-sm">了解详情</span>
+          <ArrowRight class="w-8 h-5 md:(w-14 h-9) bg-white" />
         </NuxtLink>
       </div>
       <img class="brand-img" :src="products[2].imgsrc" />
 
       <img class="brand-img" :src="products[3].imgsrc" />
       <div class="product relative ">
-        <img v-if="locale === 'zh'" src="/home/text/zh/黄色.jpg"  class="object-cover wh-full" />
-        <img v-else-if="locale === 'en'" src="/home/text/en/黄色.jpg"  class="object-cover wh-full" />
-        <img v-else-if="locale === 'de'" src="/home/text/de/黄色.jpg"  class="object-cover wh-full" />
+        <img v-if="locale === 'zh'" src="/home/text/zh/黄色.jpg" class="object-cover wh-full" />
+        <img v-else-if="locale === 'en'" src="/home/text/en/黄色.jpg" class="object-cover wh-full" />
+        <img v-else-if="locale === 'de'" src="/home/text/de/黄色.jpg" class="object-cover wh-full" />
         <NuxtLink to="brand/4" class="f-s-c absolute bottom-4 left-8 md:(bottom-30 left-40)">
-          <span  class="border-1 md:border-2 border-white h-5 md:h-9 f-c-c px-2  md:px-4 text-xs md:text-sm">了解详情</span>
+          <span class="border-1 md:border-2 border-white h-5 md:h-9 f-c-c px-2  md:px-4 text-xs md:text-sm">了解详情</span>
           <ArrowRight class="w-8 h-5 md:(w-14 h-9) bg-white" />
         </NuxtLink>
       </div>
@@ -57,6 +104,9 @@
 <style scoped lang="scss"></style>
 
 <script setup>
+import { breakpointsTailwind, useBreakpoints } from '@vueuse/core'
+const breakpoints = useBreakpoints(breakpointsTailwind)
+const mdAndSmaller = breakpoints.smallerOrEqual('md') 
 let lc = ''
 const { locale } = useI18n();
 const products = reactive([
@@ -96,7 +146,7 @@ const products = reactive([
   },
   {
     kwcolor: "text-#57A9FB",
- 
+
     imgsrc: "/imgs/主页宣传黄.png",
     keyword: "纳米分散 高效吸收",
     title: "Bestable百乐适植物乳植杆菌粉SNK",
@@ -109,11 +159,23 @@ const products = reactive([
 ]);
 </script>
 <style lang="scss" scoped>
-.product {
-  width: 42%;
+@media screen and (min-width: 768px) {
+  .product {
+    width: 42%;
+  }
+
+  .brand-img {
+    width: 58%;
+  }
 }
 
-.brand-img {
-  width: 58%;
+@media screen and (max-width: 768px) {
+  .product {
+    width: 100%;
+  }
+  .brand-img {
+    width: 100%;
+    min-height: 200px;
+  }
 }
 </style>

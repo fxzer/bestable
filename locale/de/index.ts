@@ -26,7 +26,7 @@ export default {
 
   about1: 'Geschichte der Marke',
   about2: 'Markenkern',
-  about3: 'Vermarktungsstrategie',
+  about3: 'Markenstrategie',
 
   aboutContent1: [`Bestable ist eine in Deutschland registrierte Ernährungsmarke, die sich auf Ernährung für die ganze Familie konzentriert. Mit seinem Markenkonzept, „ein gesunder Ernährungsdiamant für die ganze Familie zu werden“, hat sich Bestable der Forschung, Entwicklung und Produktion hochwertiger, natürlicher und sicherer Ernährungsprodukte verschrieben, mit dem Ziel, Menschen dabei zu helfen, ihre Gesundheit und Lebensqualität zu verbessern .`, `Gleichzeitig konzentriert sich Bestable auf Produktverpackungsdesign und Marketingstrategien und vermittelt Verbrauchern Markenkonzepte und Produktmerkmale über verschiedene Kanäle.
   Die Produktlinie von Bestable umfasst Probiotika, spezielle Diätgetränke für Säuglinge und Kleinkinder, Kalzium, Eisen und Zink, DHA und andere Arten von Ernährungsprodukten, die für Menschen unterschiedlichen Alters und unterschiedlichen physiologischen Zustands geeignet sind. Alle Produkte werden aus importierten Rohstoffen ohne chemische Zusätze und künstliche Farbstoffe hergestellt, um die Sicherheit und Reinheit der Produkte zu gewährleisten.

@@ -54,7 +54,7 @@ function sendEmail() {
 </script>
 
 <template>
-  <div class="form-wrap f-c-c">
+  <div class="form-wrap  f-c-c">
     <Transition enter-active-class="animate__animated animate__slideInLeft">
       <div class="showMessage p-3 fixed top-26 right-10 sd-8-1 bg-white max-w-80" v-if="showMessage.value">
         <h2 class="text-xl " :class="showMessage.type === 'success' ? 'text-green-400' : 'text-red-400'">{{
@@ -63,22 +63,22 @@ function sendEmail() {
       </div>
     </Transition>
     <form ref="form" @submit.prevent="sendEmail"
-      class="grid grid-cols-1 gap-8 sd-6-1 rounded-sm w-2/5 mx-auto py-8 px-15   my-10">
+      class="grid grid-cols-1 gap-8 p-4 pr-8 md:(gap-8 py-8 px-15  w-2/5) sd-6-1 rounded-sm mx-auto    my-10">
       <h2 class="text-3xl mb-4 text-center">{{ $t('feedbackTitle') }}</h2>
       <div class="f-s-c relative">
-        <label class="bg-cxp-org/50  py-3 w-20 text-center  ">{{ $t('form.name') }}</label>
+        <label class="bg-cxp-org/50  py-3 w-15 md:w-20 text-center  ">{{ $t('form.name') }}</label>
         <input class="bg-gray-100 shadow-inner  py-3 px-4 flex-1 " type="text" v-model.trim="feedForm.name" name="name"
           :placeholder="$t('form.pname')">
         <p class="absolute -bottom-5   left-14 text-red-500" v-if="validate.name">{{$t('form.pname')}}</p>
       </div>
       <div class="f-s-c relative">
-        <label class="bg-cxp-org/50  py-3 w-20 text-center  ">{{ $t('form.phone') }}</label>
+        <label class="bg-cxp-org/50  py-3 w-15 md:w-20 text-center  ">{{ $t('form.phone') }}</label>
         <input class="bg-gray-100 shadow-inner  py-3 px-4 flex-1 " type="text" v-model.trim="feedForm.phone" name="phone"
           :placeholder="$t('form.pphone')">
         <p class="absolute -bottom-5   left-14 text-red-500" v-if="validate.phone">{{ $t('form.pformat') }}</p>
       </div>
       <div class="f-s-c relative ">
-        <label class="bg-cxp-org/50  py-3 w-20 text-center  ">{{ $t('form.question') }}</label>
+        <label class="bg-cxp-org/50  py-3 w-15 md:w-20 text-center  ">{{ $t('form.question') }}</label>
         <textarea class="bg-gray-100 shadow-inner  py-3 px-4 flex-1 " v-model.trim="feedForm.question" name="question"
           :placeholder="$t('form.pquestion')"></textarea>
         <p class="absolute -bottom-5   left-14 text-red-500" v-if="validate.question">{{ $t('form.pquestion') }}</p>

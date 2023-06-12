@@ -78,21 +78,12 @@
 </template>
 
 <script setup lang="ts">
-const isDark = ref(false);
 const route = useRoute();
 const router = useRouter();
 const { locale } = useI18n()
 const navs = useNavs();
 const curNav = ref<any>({});
 const popper = ref();
-const toggleTheme = () => {
-  isDark.value = !isDark.value;
-  if (isDark.value) {
-    document.documentElement.classList.add("dark");
-  } else {
-    document.documentElement.classList.remove("dark");
-  }
-};
 
 const isActive = (nav: any) => route.path.includes(nav.key as string);
 const goTo = (idx: number, key: string) => {

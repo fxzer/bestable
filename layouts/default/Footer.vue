@@ -2,12 +2,16 @@
   <div class="bg-primary w-full p-10">
     <div class="w-full md:w-300 mx-auto ">
       <div class=" f-s-c flex-col  items-start md:items-center space-y-4 md:(space-x-6 space-y-0) md:flex-row">
-        <NuxtLink to="/"><img src="/logo.png" alt="" class="block h-15" /></NuxtLink>
+        <NuxtLink to="/"><img src="/logo.png" alt="" class="block h-15 " /></NuxtLink>
         <p class="text-white">{{ $t('concat') }}</p>
         <div class="f-s-c space-x-4">
-          <img src="/wechat.png" class="wh-9" alt="" />
-          <img src="/douyin.svg" class="wh-10 p-1.5 bg-black rounded-md" alt="" />
-          <img src="/red-book.png" class="h-10 mt-3" alt="" />
+          <NuxtLink><img src="/wechat.png" class="wh-9 cursor-pointer" /></NuxtLink>
+          <NuxtLink
+            @click="openTab('https://www.douyin.com/user/MS4wLjABAAAA2Po-Ena_CJHF9MPOpopQ25UzlCB4UMgohrurrkgfbc8Lq4fAUnUOPgPGa0hDbbT4')">
+            <img src="/douyin.svg" class="wh-10 p-1.5 bg-black rounded-md cursor-pointer" /></NuxtLink>
+          <NuxtLink @click="openTab('https://www.xiaohongshu.com/user/profile/60bdbd7c000000000101e521')"><img
+              src="/red-book.png" class="h-10 mt-3 cursor-pointer" /></NuxtLink>
+
         </div>
       </div>
       <div class="leading-loose mt-8 flex flex-col md:flex-row space-y-10  md:(space-x-30 space-y-0)">
@@ -57,5 +61,9 @@ const router = useRouter();
 const goTo = (idx: number, key: string) => {
   router.push(`/${key}/${idx}`);
 };
+//新标签页打开
+const openTab = (link:string) => {
+  window.open(link)
+}
 </script>
 <style scoped lang="scss"></style>

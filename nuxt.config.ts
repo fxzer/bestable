@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   devServer: {
     port: 9898,
   },
-  modules: ['@unocss/nuxt', '@nuxtjs/i18n','@element-plus/nuxt'],
+  modules: ['@unocss/nuxt', '@nuxtjs/i18n','@element-plus/nuxt','@vueuse/nuxt',],
   postcss: {
     plugins: {
       tailwindcss: {},
