@@ -1,9 +1,9 @@
 <template>
   <div class="flex">
     <!-- 宣传图 -->
-    <img class="brand-img min-h-100" :src="`/home/promot/${i}.png`" />
+    <img class="brand-img min-h-100  hidden md:block" :src="`/home/promot/${i}.png`" />
     <!-- 文字介绍 -->
-    <div class="product relative min-h-100">
+    <div class="product relative min-h-100  hidden md:block">
       <img :src="`/home/text/${locale}/${i}.jpg`" class=" wh-full" />
       <NuxtLink :to="`/brand/${i}`" class="f-s-c absolute bottom-20% left-20% ">
         <span class="border-2 border-white text-white h-9 f-c-c px-4 text-sm">{{

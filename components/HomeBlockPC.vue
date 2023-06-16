@@ -1,7 +1,7 @@
 <template>
   <div class="flex">
     <!-- 文字介绍 -->
-    <div class="product relative min-h-100">
+    <div class="product relative min-h-100  hidden md:block">
       <!-- <img v-if="locale === 'zh'" :src="`/home/text/zh/${i}.jpg`" class="wh-full" />
       <img v-else-if="locale === 'en'" :src="`/home/text/en/${i}.jpg`" class="wh-full" />
       <img v-else="locale==='de'" :src="`/home/text/de/${i}.jpg`" class="wh-full" /> -->
@@ -13,7 +13,7 @@
       </NuxtLink>
     </div>
     <!-- 宣传图 -->
-    <img class="brand-img min-h-100" :src="`/home/promot/${i}.png`" />
+    <img class="brand-img min-h-100 hidden md:block" :src="`/home/promot/${i}.png`" />
   </div>
 </template>
 
