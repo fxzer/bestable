@@ -14,8 +14,7 @@ git add -A
 
 git commit -m '🎉deploy gh-pages🎉'
 
-git push -f git@github.com:fxzer/bestable.git main:gh-pages
-git push -f git@gitee.com:fxzer/bestable.git main:gh-pages
+git push -f git@github.com:bestable-web/bestable.git main:gh-pages
 
 cd ../..
 
