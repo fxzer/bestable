@@ -5,6 +5,9 @@
 1. Vue3
 2. Nuxt3
 3. UnoCss
+4. Element-Plus
+5. TailWindCSS
+6. emailjs
 
 ## 安装依赖
 

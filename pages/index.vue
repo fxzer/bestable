@@ -3,20 +3,20 @@
     <img :src="`/home/origin/${locale}.jpg`" class="object-cover wh-full" />
   </div>
   <!-- 移动端 -->
-  <div v-if="mdAndSmaller">
+  <div  class="block md:hidden">
     <HomeBlockMobile v-for="i in 4" :key="i" :i="i" />
   </div>
   <!-- PC端 -->
-  <div v-else>
-    <HomeBlockPC v-for="i in 4" :key="i" :i="i" />
+  <div class="hidden md:block">
+    <template v-for="i in 4" :key="i">
+      <HomeBlockPC  :i="i" v-if="i % 2" />
+      <HomeBlockPCRev  :i="i" v-else />
+    </template>
   </div>
   <Bottom />
 </template>
 <style scoped lang="scss"></style>
 
 <script setup>
-import { breakpointsTailwind, useBreakpoints } from '@vueuse/core'
-const breakpoints = useBreakpoints(breakpointsTailwind)
-const mdAndSmaller = breakpoints.smallerOrEqual('md') 
 const { locale } = useI18n();
 </script>
