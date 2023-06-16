@@ -5,7 +5,6 @@
         <NuxtLink to="/"><img src="/logo.png" alt="" class="block h-15 " /></NuxtLink>
         <p class="text-white">{{ $t('concat') }}</p>
         <div class="f-s-c space-x-4">
-          <NuxtLink><img src="/wechat.png" class="wh-9 cursor-pointer" /></NuxtLink>
           <NuxtLink
             @click="openTab('https://www.douyin.com/user/MS4wLjABAAAA2Po-Ena_CJHF9MPOpopQ25UzlCB4UMgohrurrkgfbc8Lq4fAUnUOPgPGa0hDbbT4')">
             <img src="/douyin.svg" class="wh-10 p-1.5 bg-black rounded-md cursor-pointer" /></NuxtLink>

@@ -53,6 +53,7 @@
         </NuxtLink>
       </div>
     </div>
+    <!-- 移动端 -->
     <div class="flex flex-wrap text-bgray"  v-else>
       <div class="product relative">
         <img v-if="locale === 'zh'" src="/home/text/zh/蓝色.jpg" class="object-cover wh-full" />
