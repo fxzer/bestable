@@ -17,7 +17,7 @@ export default defineNuxtConfig({
     'assets/css/main.scss',
   ],
   i18n: {
-    vueI18n: './i18n.config.ts' // if you are using custom path, default 
+    vueI18n: './i18n.config.ts' 
   },
   app: {
     head: {

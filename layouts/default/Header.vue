@@ -27,7 +27,7 @@
         <NuxtLink @click="goTo(idx, 'brand')" class="nav-bar f-c-c hover:text-primary text-xl  cursor-pointer"
           v-for="idx in 4" :class="<any>route.params.id == idx ? 'text-primary' : 'text-primary/80'">
           <img :src="`/header/${idx}.png`" class="block min-w-14 mr-4px h-25 -translate-y-2 rounded-sm" />
-          <h2 class="clamp-2" :title="$t(`title${idx - 1}`)">{{ $t(`title${idx - 1}`) }}</h2>
+          <h2 class="clamp-2" :title="$t(`title${idx}`)">{{ $t(`title${idx}`) }}</h2>
         </NuxtLink>
       </div>
 
@@ -53,7 +53,7 @@
               <NuxtLink @click="goTo(idx, 'brand')" class="nav-bar f-s-c hover:text-primary text-xl  cursor-pointer"
                 v-for="idx in 4" :class="<any>route.params.id == idx ? 'text-primary' : 'text-primary/80'">
                 <img :src="`/header/${idx}.png`" class="block min-w-14 mr-4px h-25 -translate-y-2 rounded-sm" />
-                <h2 class="clamp-2 text-lg" :title="$t(`title${idx - 1}`)">{{ $t(`title${idx - 1}`) }}</h2>
+                <h2 class="clamp-2 text-lg" :title="$t(`title${idx}`)">{{ $t(`title${idx}`) }}</h2>
               </NuxtLink>
             </el-collapse-item>
             <!-- 关于 -->
@@ -109,7 +109,6 @@ const menuVisible = ref(false)
 // 移动端显示菜单
 function showMenu() {
   menuVisible.value = !menuVisible.value
-  console.log("[  menuVisible.value ]-127", menuVisible.value);
 }
 </script>
 <style lang="scss" scoped>

@@ -1,6 +1,6 @@
 <script setup lang='ts'>
 const paths = [
-  '/',
+  '/meet',
   '/nutrition',
   '/form'
 ]

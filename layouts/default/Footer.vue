@@ -7,9 +7,9 @@
         <div class="f-s-c space-x-4">
           <NuxtLink
             @click="openTab('https://www.douyin.com/user/MS4wLjABAAAA2Po-Ena_CJHF9MPOpopQ25UzlCB4UMgohrurrkgfbc8Lq4fAUnUOPgPGa0hDbbT4')">
-            <img src="/douyin.svg" class="wh-10 p-1.5 bg-black rounded-md cursor-pointer" /></NuxtLink>
+            <img src="/concat/douyin.svg" class="wh-10 p-1.5 bg-black rounded-md cursor-pointer" /></NuxtLink>
           <NuxtLink @click="openTab('https://www.xiaohongshu.com/user/profile/60bdbd7c000000000101e521')"><img
-              src="/red-book.png" class="h-10 mt-3 cursor-pointer" /></NuxtLink>
+              src="/concat/red-book.png" class="h-10 mt-3 cursor-pointer" /></NuxtLink>
 
         </div>
       </div>
@@ -19,7 +19,7 @@
           <div class="flex-col f-c-s space-y-2">
             <NuxtLink @click="goTo(idx, 'brand')" class="hover:text-white text-white/80 text-base cursor-pointer"
               v-for="idx in 4">
-              {{ $t(`title${idx - 1}`) }}
+              {{ $t(`title${idx}`) }}
             </NuxtLink>
           </div>
         </div>
