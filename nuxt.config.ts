@@ -21,6 +21,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
+      title: 'Bestable百乐适',
       script: [
         { src: 'https://smtpjs.com/v3/smtp.js' }
       ],
