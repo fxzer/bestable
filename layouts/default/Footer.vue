@@ -52,6 +52,9 @@
 
         </div>
       </div>
+      <div class="text-white/80 f-s-c space-x-2  mt-4">
+        <img src="/beian.png" alt=""><span>苏ICP备2023020722号-1</span>
+      </div>
     </div>
   </div>
 </template>
